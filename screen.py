@@ -3,6 +3,7 @@ import pygame
 from constants import *
 
 
+
 def create_screen(world):
     # Initialise screen
     pygame.init()
@@ -15,6 +16,9 @@ def create_screen(world):
     background = pygame.Surface(screen.get_size())
     background = background.convert()
     background.fill((255, 255, 255))
+    
+   
+    
 
     for x in range(WORLD_WIDTH):
         for y in range(WORLD_HEIGHT):
@@ -35,8 +39,12 @@ def create_screen(world):
                 ],
             )
 
-    return screen, background
+    return screen, background, 
 
+
+    
+    
+                      
 
 def update_screen(screen, background, world, player):
     player_x, player_y = player
